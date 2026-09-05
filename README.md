@@ -7,6 +7,10 @@ NDirty 是 Windows 离线图像遮挡补全软件。用户导入图片并绘制�
 
 默认使用流程：**导入图片 → 标记遮挡区域 → 补全图像 → 导出结果**。项目保存、蒙版导入/导出和智能候选区均为辅助功能，不是完成一次补全的必经步骤。
 
+## 直接下载运行（推荐）
+
+Windows x64 用户可从 [v0.1.1 发布页](https://github.com/mingtu149411/NDirty/releases/tag/v0.1.1) 下载 `NDirty-0.1.1-windows-x64.zip`。解压后直接运行 `NDirty\\NDirty.exe`；该离线包已经包含模型和运行时，不需要安装 Python，也不需要联网下载模型。
+
 ## 从源码运行
 
 仓库包含运行必需的 LaMa 与 OCR ONNX 模型，但不包含 Python 虚拟环境、构建缓存或 Windows `dist` 输出。请在 Windows x64 上安装 Python 3.11–3.13，并在项目根目录执行：
