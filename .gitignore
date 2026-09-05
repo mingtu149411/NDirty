@@ -9,6 +9,7 @@ src/*.egg-info/
 # Build artifacts and local runtime state
 build/
 dist/
+release/
 *.spec
 logs/
 tmp/
