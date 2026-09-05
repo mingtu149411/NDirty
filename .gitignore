@@ -1,0 +1,35 @@
+# Python environments and caches
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Build artifacts and local runtime state
+build/
+dist/
+*.spec
+logs/
+tmp/
+cache/
+
+# Local models, datasets, training checkpoints, and generated user content
+# 必需运行模型随源码仓库提交；训练产生的候选权重仍须忽略。
+models/**/*.onnx
+!models/lama/inpainting_lama_2025jan.onnx
+!models/ocr/PP-OCRv6_det_small.onnx
+!models/ocr/PP-OCRv6_rec_small.onnx
+!models/ocr/ch_ppocr_mobile_v2.0_cls_mobile.onnx
+models/**/*.pth
+models/**/*.pt
+models/**/*.safetensors
+training/data/
+training/checkpoints/
+training/runs/
+exports/
+
+# Editor/OS files
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini

@@ -1,0 +1,8 @@
+产品名称：NDirty
+项目创建者：南京大学智能化软件专业241880428沈逸文
+版本：0.1.1
+构建类型：Windows x64 离线便携版
+运行方式：双击 NDirty.exe；不需要 Python、pip、网络或模型下载。
+模型：OpenCV LaMa ONNX；RapidOCR PP-OCR 权重（详见 THIRD_PARTY_NOTICES.md）。
+原图保护：输入图像只读；补全结果必须导出到不同路径。
+已知限制：OCR 与 GrabCut 在超大图上可能短暂阻塞界面；GPU 仅在 ONNX Runtime 提供 CUDA provider 时启用。
